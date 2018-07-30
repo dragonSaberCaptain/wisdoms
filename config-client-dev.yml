@@ -1,7 +1,7 @@
 spring:
   datasource:
       #dev
-      url: jdbc:mysql://192.168.0.119:3306/test
+      url: jdbc:mysql://localhost:3306/test
       username: root
       password: Ysw1023@qq.com
 
