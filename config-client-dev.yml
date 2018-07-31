@@ -4,7 +4,8 @@ spring:
       url: jdbc:mysql://localhost:3306/test
       username: root
       password: Ysw1023@qq.com
-       druid:
+
+      druid:
         #配置初始化大小、最小、最大
         initialSize: 1
         minIdle: 3
