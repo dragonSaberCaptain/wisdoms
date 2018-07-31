@@ -58,22 +58,5 @@ spring:
          # 合并多个DruidDataSource的监控数据
         #useGlobalDataSourceStat: true
 
-        web-stat-filter:
-          #添加忽略的格式信息.
-          exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
-          #添加过滤规则.
-          urlPattern: /*
-        stat-view-servlet:
-          #登录查看信息的账号
-          loginUsername: dragonSaberCaptain
-          #登录查看信息的密码
-          loginPassword: 749969369@dragonSaberCaptain.com
-          #是否能够重置数据
-          resetEnable: false
-          #白名单
-          allow: 127.0.0.1
-          #IP黑名单 (存在共同时，deny优先于allow)
-          deny:
-
 
 
