@@ -19,6 +19,11 @@ spring:
     ssl: false
     # 连接超时时间（毫秒）
     timeout: 60000ms
+#    sentinel:
+      #哨兵模式，不使用则不用开启）Redis服务器的名称。
+#      master:
+      #（哨兵模式，不使用则不用开启）主机：端口对的逗号分隔列表。
+#      nodes:
     jedis:
       pool:
         # 连接池最大连接数（使用负值表示没有限制）
@@ -28,9 +33,6 @@ spring:
         # 连接池中的最小空闲连接
         minIdle: 4
         # 连接池最大阻塞等待时间（使用负值表示没有限制）
-        maxWait: 1000ms
-#    sentinel:
-      #哨兵模式，不使用则不用开启）Redis服务器的名称。
-#      master:
-      #（哨兵模式，不使用则不用开启）主机：端口对的逗号分隔列表。
-#      nodes:
+        maxWait: 2ms
+
+
